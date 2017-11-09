@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4d855cd-d649-4184-bf47-7ec2bc6df0c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvnw" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvnw.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/springcloud/ribbonservice/RibbonServiceApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/springcloud/ribbonservice/controller/HelloController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/springcloud/ribbonservice/service/HelloService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/config/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/springcloud/ribbonservice/RibbonServiceApplicationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../eureka-server/src/main/java/com/springcloud/eurekaserver/EurekaServerApplication.java" afterPath="$PROJECT_DIR$/../eureka-server/src/main/java/com/springcloud/eurekaserver/EurekaServerApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../eureka-server/src/main/resources/config/application.yml" afterPath="$PROJECT_DIR$/../eureka-server/src/main/resources/config/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../use-service/src/main/java/com/springcloud/useservice/UseServiceApplication.java" afterPath="$PROJECT_DIR$/../use-service/src/main/java/com/springcloud/useservice/UseServiceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../use-service/src/main/resources/config/application.yml" afterPath="$PROJECT_DIR$/../use-service/src/main/resources/config/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -372,12 +356,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510215086457</updated>
-      <workItem from="1510215089852" duration="3875000" />
+      <workItem from="1510215089852" duration="3965000" />
     </task>
+    <task id="LOCAL-00001" summary="The ribbon project">
+      <created>1510219026509</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1510219026509</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3875000" />
+    <option name="totallyTimeSpent" value="3965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -419,6 +411,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="The ribbon project" />
+    <option name="LAST_COMMIT_MESSAGE" value="The ribbon project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
