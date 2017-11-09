@@ -29,14 +29,14 @@ public class UseServiceApplication {
 	}
 
 	/*
-	 * @title: sayHelloWorld
-	 * @Description:    helloworld测试
-	 * @param: request
+	 * @title: sayHello
+	 * @Description:    seyHello测试
+	 * @param: name
 	 * @return: java.lang.String
-	 * @date:   2017/11/8 17:40
+	 * @date:   2017/11/9 16:45
 	 */
-	@RequestMapping(value = "/helloworld",method = RequestMethod.GET)
-	public String sayHelloWorld(ServletRequest request) {
-		return "hello world,i am " + request.getRemoteAddr() + ":" + port;
+	@RequestMapping(value = "/sayHello",method = RequestMethod.GET)
+	public String sayHello(String name) {
+		return "hello," + name + ",i am from port:" + port;
 	}
 }
