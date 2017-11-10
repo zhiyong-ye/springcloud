@@ -1,0 +1,26 @@
+#eureka-server服务注册中心2端口配置
+server:
+  port: 8761
+
+#高可用另一台服务注册中心1配置
+server1:
+  port: 8760
+  eureka:
+    instance:
+      hostname: localhost1
+
+#服务应用名称，服务间调用需要根据此名称来调用
+spring:
+  application:
+    name: eureka-server
+
+#eureka-server服务注册中心2配置
+eureka:
+  instance:
+    hostname: localhost2
+    lease-expiration-duration-in-seconds: 90    #没有收到心跳将实例剔除的时间参数
+  client:
+#    register-with-eureka: false   #是否注册自己到服务注册中心，默认true
+#    fetch-registry: false          #是否检索服务，默认true，单点服务注册中心不需要检索
+    service-url:
+      defaultZone: http://${server1.eureka.instance.hostname}:${server1.port}/eureka/    #服务注册地址

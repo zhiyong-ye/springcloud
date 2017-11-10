@@ -1,14 +1,16 @@
 #服务提供者端口配置
 server:
-  port: 8762
+  port: 8763
 
-#服务间调用需要根据此名称来调用
+#服务应用名称，服务间调用需要根据此名称来调用
 spring:
   application:
     name: use-service
 
 #eureka-client服务提供者连接注册中心配置
 eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 30   #发送续约心跳的时间参数
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost1:8760/eureka/   #服务注册地址，在多个高可用注册中心中，随便注册一个地址即可，会自动同步多个服务注册中心

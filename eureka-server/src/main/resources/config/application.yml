@@ -1,13 +1,4 @@
-#注册中心端口配置
-server:
-  port: 8761
-
-#eureka-server注册中心配置
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#总配置，启用环境配置，此项目中使用了2台高可用注册中心，需要更改端口，启动2个注册中心
+spring:
+  profiles:
+    active:  eureka-server1
