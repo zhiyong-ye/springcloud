@@ -45,10 +45,10 @@ public class HelloService {
 
         if (isRibbon == true) {
             //ribbon模式调用（使用服务名称调用服务）
-            url = "http://USE-SERVICE/" + invokeMethodName + paramStr;
+            url = "http://use-service/" + invokeMethodName + paramStr;
         }else {
             //负载均衡选择服务实例
-            ServiceInstance serviceInstance = loadBalancerClient.choose("USE-SERVICE");
+            ServiceInstance serviceInstance = loadBalancerClient.choose("use-service");
             //使用基础模式调用（使用ip地址跟端口调用服务）
             url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + invokeMethodName + paramStr;
         }

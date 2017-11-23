@@ -1,13 +1,13 @@
-#ribbon服务消费者端口配置
+#feign服务消费者端口配置
 server:
-  port: 8764
+  port: 8765
 
 #服务应用名称，服务间调用需要根据此名称来调用
 spring:
   application:
-    name: ribbon-service
+    name: feign-service
 
-#eureka-client:ribbon服务消费者连接注册中心配置
+#eureka-client:feign服务消费者连接注册中心配置
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 30   #发送续约心跳的时间参数
