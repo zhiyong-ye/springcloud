@@ -1,0 +1,17 @@
+#config配置中心服务端口配置
+server:
+  port: 8766
+
+#服务应用名称，
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master     #配置仓库分支
+      server:
+        git:
+          uri: https://github.com/zhiyong-ye/springcloud.git     #配置git仓库地址
+ #         searchPaths: respo        #配置仓库路径
+ #         username: username        #git仓库账号
+ #         password: password        #git仓库密码

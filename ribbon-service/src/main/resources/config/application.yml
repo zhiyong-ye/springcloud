@@ -6,6 +6,11 @@ server:
 spring:
   application:
     name: ribbon-service
+#  cloud:
+#   loadbalancer:
+#      retry:
+#        enabled: true     #是否开启重试机制，默认关闭
+
 
 #eureka-client:ribbon服务消费者连接注册中心配置
 eureka:
@@ -14,3 +19,20 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost1:8760/eureka/    #服务注册地址，在多个高可用注册中心中，随便注册一个地址即可，会自动同步多个服务注册中心
+
+#断路器的超时时间需要大于ribbon的超时时间，不然不会触发重试
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 10000
+
+#use-service:
+#  robbon:
+#    connect-timeout: 250             #请求连接超时时间
+#    read-timeout: 1000                #请求处理超时时间
+#    ok-to-retry-on-all-operations: true   #对所有操作请求都进行重试
+#    max-auto-retries-next-server: 2       #切换实例的重试次数
+#    max-auto-retries: 1                     #对当前实例的重试次数
