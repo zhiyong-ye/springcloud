@@ -27,6 +27,6 @@ public class HelloController {
     @RequestMapping(value = "/sayHello",method = RequestMethod.GET)
     public Object sayHello(String name) {
         //调用service
-    	return helloService.sayHello(name);
+    	return helloService.sayHello(name,true);
     }
 }
